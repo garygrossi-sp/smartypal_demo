@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	
+    <title>SmartyPal</title>
+	
+	<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Unity -->
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="icon" href="img/cropped-Favicon-32x32.png" />
+	<script src="TemplateData/UnityProgress.js"></script>
+	
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+	
+  </head>
+  
+  <body class="template">
+	
+	<nav class="navbar navbar-inverse navbar-fixed-top navbar-custom">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="brand" href="http://smartypal.com/">
+					<img class="navbar-brand" src="img/SmartyPal_Logo_White_H30.png" alt="SmartyPal Logo" />
+				</a>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="game-content">
+	  <div class="template-wrap clear">
+      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
+      <br>
+      <div class="logo"></div>
+      <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+      <div class="title">Fullscreen</div>
+    </div>
+	</div>
+  </body>
+  
+  <!-- <script src="js/setup.js"></script> -->
+  
+  <script type='text/javascript'>
+  var Module = {
+    TOTAL_MEMORY: 536870912,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    dataUrl: "Release/WebGL.data",
+    codeUrl: "Release/WebGL.js",
+    memUrl: "Release/WebGL.mem",
+    
+  };
+  </script>
+  <script src="Release/UnityLoader.js"></script>
+</html>

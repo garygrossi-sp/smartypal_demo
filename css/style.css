@@ -1,0 +1,24 @@
+html{
+}
+
+.navbar {
+	position: relative;
+	border-color:transparent;
+}
+
+.navbar-custom {
+	/*height:70px;*/
+	color: white;
+	background-color:#389CE3;
+}
+
+.game-content {
+	
+}
+
+.brand {
+	position: absolute;
+    left: 50%;
+    margin-left: -50px !important;  /* 50% of your logo width */
+    display: block;
+}
